@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="panneauRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Fichier">
+                    <items>
+                        <MenuItem fx:id="ouvrirFichier" mnemonicParsing="false" onAction="#ouvrirFichier" text="Ouvrir fichier..." />
+                        <MenuItem mnemonicParsing="false" onAction="#ouvrirRepertoire" text="Ouvrir dossier..." />
+                        <MenuItem fx:id="MI_quitter" mnemonicParsing="false" onAction="#quitter" text="Quitter" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <HBox layoutY="362.0" prefHeight="38.0" prefWidth="600.0" style="-fx-alignment: center;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <Button fx:id="reculer" mnemonicParsing="false">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/Reculer.png" />
+                            </image>
+                        </ImageView>
+                    </graphic></Button>
+                <Button fx:id="play" mnemonicParsing="false">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/Play.png" />
+                            </image>
+                        </ImageView>
+                    </graphic></Button>
+                <Button fx:id="pause" mnemonicParsing="false">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/Pause.png" />
+                            </image>
+                        </ImageView>
+                    </graphic></Button>
+                <Button fx:id="avancer" mnemonicParsing="false">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/Avancer.png" />
+                            </image>
+                        </ImageView>
+                    </graphic></Button>
+            </children>
+        </HBox>
+      <Label fx:id="enJeu" text="Label" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+    </children>
+</AnchorPane>
